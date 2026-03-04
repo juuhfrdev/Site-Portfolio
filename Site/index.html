@@ -3,22 +3,133 @@
 
 <head>
     <meta charset="UTF-8">
+    <title>Julia Freire | Portfólio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Portfólio - Julia Freire de Souza</title>
 </head>
 
 <body>
+
+    <!-- Header -->
     <header>
-        <nav>
-            <a href="#Sobre">Sobre</a>
-            <a href="#Projetos">Projetos</a>
-            <a href="#Contato">Contato</a>
+        <nav class="navbar">
+
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+
+            <img src="assets/Logo-Portfólio.png" class="logo">
+
         </nav>
     </header>
 
-    <h2>Bem-vindo(a) ao meu portfólio!</h2>
+    <section id="imagens">
+        <div>
+            <figure><img src="assets/HW-c.png"/></figure>
+            <figure><img src="assets/HW-c++.png"/></figure>
+            <figure><img src="assets/HW-c#.png"/></figure>
+            <figure><img src="assets/HW-cb.png"/></figure>
+            <figure><img src="assets/HW-go.png"/></figure>
+            <figure><img src="assets/HW-js.png"/></figure>
+            <figure><img src="assets/HW-ju.png"/></figure>
+            <figure><img src="assets/HW-jv.png"/></figure>
+            <figure><img src="assets/HW-kt.png"/></figure>
+            <figure><img src="assets/HW-py.png"/></figure>
+            <figure><img src="assets/HW-sf.png"/></figure>
+        </div>
+
+    </section>
+    <!-- Seção Inicial -->
+    <section id="inicio" class="hero">
+        <div class="hero-texto">
+            <h1>Olá, eu sou Julia Freire</h1>
+            <h2>Estudante de Engenharia de Computação</h2>
+            <p>Desenvolvendo soluções em tecnologia e aplicações web.</p>
+            <a href="#projetos" class="botao">Ver Projetos</a>
+        </div>
+    </section>
+
+    <!-- Sobre -->
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>
+            Sou estudante de Engenharia de Computação, com foco em desenvolvimento
+            web e tecnologia. Busco constantemente evoluir minhas habilidades
+            através de projetos práticos.
+        </p>
+    </section>
+
+    <!-- Projetos -->
+    <section id="projetos">
+        <h2>Projetos</h2>
+
+        <div class="cards-container">
+
+            <article class="card">
+                <h3>Projeto 1</h3>
+                <p>Descrição breve do projeto desenvolvido.</p>
+                <div class="card-botoes">
+                    <a href="#">GitHub</a>
+                    <a href="#">Ver Online</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <h3>Projeto 2</h3>
+                <p>Descrição breve do projeto desenvolvido.</p>
+                <div class="card-botoes">
+                    <a href="#">GitHub</a>
+                    <a href="#">Ver Online</a>
+                </div>
+            </article>
+
+        </div>
+    </section>
+
+    <!-- Habilidades -->
+    <section id="habilidades">
+        <h2>Habilidades</h2>
+
+        <div class="skills-container">
+            <div>
+                <h3>Linguagens</h3>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>SQL</li>
+                </ul>
+            </div>
+
+            <div>
+                <h3>Ferramentas</h3>
+                <ul>
+                    <li>Git</li>
+                    <li>GitHub</li>
+                    <li>VS Code</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contato -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Email: juliafrsouzaa@gmail.com</p>
+        <p>LinkedIn: linkedin.com/in/julia-freire-de-souza</p>
+        <p>GitHub: github.com/juuhfrdev</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <img src="assets/Logo-Portfólio.png" alt="Logo Julia Freire" class="logo-footer">
+        <p>© 2026 Julia Freire. Todos os direitos reservados.</p>
+    </footer>
+
 </body>
 
 </html>
-<script src="script.js"></script>

@@ -1,0 +1,193 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #3f3f3f;
+    color: #ffffff;
+}
+
+/* HEADER FIXO */
+header {
+    background-color: rgba(74, 74, 74, 0.95);
+    padding: 20px 40px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    backdrop-filter: blur(5px);
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 45px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #d6b3ff;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.menu a:hover {
+    color: #a855f7;
+}
+
+.logo {
+    height: 45px;
+}
+
+/* LOGO */
+.logo {
+    height: 85px;
+}
+
+/* HERO */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 120px 60px 60px 60px;
+    /* espaço por causa do header fixo */
+}
+
+.hero-texto h1 {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+.hero-texto h2 {
+    font-size: 22px;
+    color: #c084fc;
+    margin-bottom: 20px;
+}
+
+.hero-texto p {
+    margin-bottom: 25px;
+    max-width: 500px;
+}
+
+/* BOTÃO COM BRILINHO */
+.botao {
+    background-color: #6d28d9;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.botao:hover {
+    background-color: #9333ea;
+    box-shadow: 0 0 15px #a855f7, 0 0 30px #6d28d9;
+    transform: translateY(-3px);
+}
+
+/* SEÇÕES */
+section {
+    padding: 80px 60px;
+}
+
+/* PROJETOS */
+.cards-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #4a4a4a;
+    padding: 25px;
+    border-radius: 15px;
+    width: 280px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.6);
+}
+
+.card h3 {
+    margin-bottom: 10px;
+    color: #c084fc;
+}
+
+.card p {
+    margin-bottom: 15px;
+}
+
+.card-botoes a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #a855f7;
+    transition: 0.3s;
+}
+
+.card-botoes a:hover {
+    color: white;
+}
+
+/* FOOTER */
+footer {
+    background-color: #4a4a4a;
+    text-align: center;
+    padding: 40px;
+    margin-top: 60px;
+}
+
+.logo-footer {
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 900px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cards-container {
+        justify-content: center;
+    }
+
+    .menu {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    header {
+        padding: 15px 20px;
+    }
+
+    .menu {
+        gap: 15px;
+        font-size: 14px;
+    }
+
+    .logo {
+        height: 35px;
+    }
+
+}
