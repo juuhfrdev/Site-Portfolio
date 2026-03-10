@@ -1,4 +1,3 @@
-/* RESET */
 * {
     margin: 0;
     padding: 0;
@@ -18,12 +17,17 @@ body {
 /* HEADER FIXO */
 header {
     background-color: rgba(74, 74, 74, 0.95);
-    padding: 20px 40px;
+    padding: 5px 40px;
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
     backdrop-filter: blur(5px);
+}
+
+h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .navbar {
@@ -49,13 +53,28 @@ header {
     color: #a855f7;
 }
 
+/* LOGO */
 .logo {
     height: 45px;
 }
 
-/* LOGO */
 .logo {
     height: 85px;
+}
+
+/*IMAGENS*/
+.imagens {
+    max-width: 70%;
+    column-count: 2;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.imagens>figure>img {
+    width: 200%;
+    border-radius: 0.5rem;
+
 }
 
 /* HERO */
@@ -126,7 +145,7 @@ section {
 }
 
 .card h3 {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     color: #c084fc;
 }
 
@@ -145,12 +164,28 @@ section {
     color: white;
 }
 
+/* CONTATO */
+#contato {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#contato>a {
+    text-decoration: none;
+    color: #dfdede
+}
+
+#contato>a>img {
+    height: 55px;
+}
+
 /* FOOTER */
 footer {
     background-color: #4a4a4a;
     text-align: center;
-    padding: 40px;
-    margin-top: 60px;
+    padding: 15px;
+    margin-top: 20px;
 }
 
 .logo-footer {
@@ -161,14 +196,17 @@ footer {
 /* RESPONSIVIDADE */
 @media (max-width: 900px) {
 
+
     .hero {
         flex-direction: column;
         text-align: center;
     }
 
+
     .cards-container {
         justify-content: center;
     }
+
 
     .menu {
         gap: 20px;
@@ -177,17 +215,21 @@ footer {
 
 @media (max-width: 600px) {
 
+
     header {
         padding: 15px 20px;
     }
+
 
     .menu {
         gap: 15px;
         font-size: 14px;
     }
 
+
     .logo {
         height: 35px;
     }
+
 
 }
